@@ -4,12 +4,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: aqua;
-}
-
 p {
   color: #1a1a1a;
+  font-weight: 200;
 }
 
 /* barra de navegació */
@@ -72,13 +69,57 @@ h1 {
 }
 
 /* Part 2 */
-h2 {
+.part2 {
+  height: 900px;
+  padding: 20px;
+}
+
+.lletra {
+  border-bottom: 3px #00b172 solid;
+  color: #1a1a1a;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  padding-bottom: 5px;
 }
 
 h3 {
+  color: #00b172;
+  margin: 23px 0px;
+}
+.caixa-gran {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
 }
 .caixetes {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 180px;
+  height: 250px;
+  /* border: #1a1a1a solid 1px; */
 }
+.caixetes > img {
+  height: 90px;
+}
+
+.caixetes > p {
+  text-align: center;
+}
+
+/* zona verda */
+
+.zona-verda {
+  height: 1000px;
+  background-color: #00b172;
+}
+
 /*
 Colors:
 
