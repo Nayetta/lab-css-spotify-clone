@@ -60,17 +60,19 @@ nav {
   width: 75%;
   text-align: center;
   margin-top: 20px;
+  max-width: 360px;
 }
 
 h1 {
   color: #fff;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 /* Part 2 */
 .part2 {
-  height: 900px;
+  /* height: 900px; */
   padding: 20px;
 }
 
@@ -80,13 +82,15 @@ h1 {
   font-weight: 400;
   text-align: center;
   margin: auto;
-  width: 200px;
+  max-width: 200px;
+  width: 80%;
   padding-bottom: 5px;
 }
 
 h3 {
   color: #00b172;
   margin: 23px 0px;
+  text-align: center;
 }
 .caixa-gran {
   display: flex;
@@ -101,7 +105,8 @@ h3 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 180px;
+  max-width: 180px;
+  width: 80%;
   height: 250px;
   /* border: #1a1a1a solid 1px; */
 }
@@ -116,7 +121,6 @@ h3 {
 /* zona verda */
 
 .zona-verda {
-  height: 1200px;
   background-color: #00b172;
   display: flex;
   flex-direction: column;
@@ -129,13 +133,32 @@ h3 {
   color: #fff;
   font-weight: 400;
   text-align: center;
-  width: 300px;
+  max-width: 300px;
   padding-bottom: 5px;
   padding-top: 20px;
 }
 
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .col-esq {
-  width: 260px;
+  max-width: 260px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .col-esq h3 {
   color: #fff;
@@ -143,10 +166,49 @@ h3 {
 
 .w-logo {
   width: 80px;
+  margin: 25px;
 }
 
 .kanye {
-  width: 300px;
+  max-width: 300px;
+  width: 80vw;
+  margin: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 750px) {
+  .caixa-gran {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .zona-verda {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 20px 40px 40px 50px;
+  }
+  .logo-text {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .textos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .zona-verda h2 {
+    max-width: 300px;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+  .kanye {
+    width: 25vw;
+    margin: 0;
+    max-width: 200px;
+  }
 }
 
 /*
