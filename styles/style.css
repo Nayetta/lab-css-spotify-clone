@@ -168,6 +168,13 @@ h3 {
   width: 80px;
   margin: 25px;
 }
+.w-logo2 {
+  width: 80px;
+  margin: 25px;
+  display: none;
+
+  right: 45%;
+}
 
 .kanye {
   max-width: 300px;
@@ -180,7 +187,7 @@ h3 {
 @media only screen and (min-width: 750px) {
   .caixa-gran {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .zona-verda {
     flex-direction: row;
@@ -213,6 +220,17 @@ h3 {
 
 /* Responsive PC Screen */
 @media only screen and (min-width: 750px) {
+  .zona-verda {
+    position: relative;
+  }
+  .w-logo {
+    display: none;
+  }
+  .w-logo2 {
+    display: flex;
+    position: absolute;
+    top: 180px;
+  }
 }
 
 /*
