@@ -26,17 +26,56 @@ nav {
   margin: 10px;
 }
 
-.menu {
+.nav-menu {
   padding: 0;
   margin-right: 5px;
   /* margin-right: 10px; */
 }
 
-.menu > li {
+.nav-menu > li {
   display: inline;
   font-size: 0.8rem;
   color: #1a1a1a;
   margin: 5px;
+}
+
+/* menu */
+
+.hamburguer {
+  position: fixed;
+  z-index: 100;
+  top: 0.7rem;
+  right: 1rem;
+  padding: 4px;
+  border: none;
+  background-color: #f2f4fc;
+  cursor: pointer;
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  height: 185px;
+  transition: transform 0.2s;
+  top: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #c8c8c8;
+  color: #6b708d;
+  list-style: none;
+  display: none;
+}
+
+.show-menu {
+  transform: translateY(0);
+}
+
+.menu > li {
+  height: 30px;
+  padding-top: 15px;
 }
 
 /* capçalera */
@@ -233,6 +272,27 @@ h3 {
   }
 }
 
+@media all and (max-width: 767px) {
+  /* HAMBURGER */
+  /* .hamburguer-menu-all {
+    display: block;
+  } */
+
+  .hamburguer {
+    display: block;
+  }
+
+  #cross {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
 /*
 Colors:
 
